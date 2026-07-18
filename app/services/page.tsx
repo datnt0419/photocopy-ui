@@ -1,8 +1,15 @@
-"use client";
-
+import type { Metadata } from "next";
 import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
 import { Sparkles, Wrench, Settings, Award, Phone } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Bảng Giá Dịch Vụ Đổ Mực & Sửa Máy In, Máy Photocopy",
+  description: "Báo giá chi tiết dịch vụ đổ mực máy in A4/A3, đổ mực máy photocopy Ricoh/Toshiba, sửa chữa phần cứng và linh kiện chính hãng tại Hà Nội.",
+  alternates: {
+    canonical: "/services",
+  },
+};
 
 export default function ServicesPage() {
   const services = [

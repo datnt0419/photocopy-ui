@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Badge } from "@/components/ui/badge";
 import {
   Accordion,
@@ -7,6 +8,14 @@ import {
 } from "@/components/ui/accordion";
 import { buttonVariants } from "@/components/ui/button";
 import { Phone } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Giải Đáp Thắc Mắc Đổ Mực & Sửa Máy Photocopy",
+  description: "Câu hỏi thường gặp về giá cả đổ mực máy in, thời gian kỹ thuật viên có mặt tại nhà, chế độ bảo hành linh kiện và dịch vụ xuất hóa đơn VAT của Xuân Thành.",
+  alternates: {
+    canonical: "/faq",
+  },
+};
 
 export default function FAQPage() {
   const faqs = [
@@ -38,6 +47,23 @@ export default function FAQPage() {
 
   return (
     <div className="py-12 md:py-20 bg-slate-50 dark:bg-zinc-950 transition-colors">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqs.map((faq) => ({
+              "@type": "Question",
+              "name": faq.q,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.a
+              }
+            }))
+          })
+        }}
+      />
       <div className="container mx-auto px-4 md:px-8 max-w-4xl">
         <div className="text-center mb-16 flex flex-col gap-4">
           <Badge className="bg-indigo-600/10 text-indigo-700 dark:bg-indigo-500/10 dark:text-indigo-400 w-fit mx-auto rounded-full px-3 py-1 font-semibold uppercase tracking-wider text-xs">

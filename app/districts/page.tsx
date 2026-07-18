@@ -1,7 +1,16 @@
+import type { Metadata } from "next";
 import { DistrictSelector } from "@/components/district-selector";
 import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
 import { Phone, MapPin } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Khu Vực Phục Vụ Đổ Mực & Sửa Máy Photocopy Tại Hà Nội",
+  description: "Xuân Thành phục vụ sửa chữa, đổ mực máy in tận nơi tại 12 quận Hà Nội: Cầu Giấy, Đống Đa, Thanh Xuân, Hà Đông, Mỹ Đình... Gọi là có mặt sau 15-30 phút.",
+  alternates: {
+    canonical: "/districts",
+  },
+};
 
 export default function DistrictsPage() {
   const branchLocations = [

@@ -1,6 +1,15 @@
+import type { Metadata } from "next";
 import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
 import { Phone, CheckCircle2 } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Quy Trình Đổ Mực Máy In & Sửa Chữa Chuyên Nghiệp",
+  description: "Quy trình kỹ thuật 6 bước nạp mực máy in văn phòng và sửa chữa máy photocopy chuyên nghiệp tại Xuân Thành: In test, vệ sinh mực thải, kiểm tra tương thích, bảo hành tận nơi.",
+  alternates: {
+    canonical: "/process",
+  },
+};
 
 export default function ProcessPage() {
   const processSteps = [
@@ -117,10 +126,10 @@ export default function ProcessPage() {
             className={buttonVariants({
               variant: "default",
               size: "lg",
-              className: "bg-white hover:bg-slate-100 text-indigo-700 font-bold px-6 py-3 rounded-full flex items-center gap-2 shrink-0 shadow-lg",
+              className: " font-bold px-6 py-3 rounded-full flex items-center gap-2 shrink-0 shadow-lg",
             })}
           >
-            <Phone className="w-4 h-4" />
+            <Phone className="w-4 h-4 " />
             0984.399.119
           </a>
         </div>

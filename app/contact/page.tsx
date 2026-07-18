@@ -1,6 +1,15 @@
+import type { Metadata } from "next";
 import { ContactForm } from "@/components/contact-form";
 import { Badge } from "@/components/ui/badge";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Liên Hệ Đặt Lịch Hẹn Đổ Mực & Sửa Máy In",
+  description: "Liên hệ Hotline 24/7 của Xuân Thành Photocopy: 0984.399.119 hoặc đăng ký tư vấn trực tuyến để nhận hỗ trợ đổ mực, sửa chữa máy photocopy tận nơi.",
+  alternates: {
+    canonical: "/contact",
+  },
+};
 
 export default function ContactPage() {
   return (
