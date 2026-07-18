@@ -7,17 +7,47 @@ import { Textarea } from "@/components/ui/textarea";
 import { CheckCircle2, ShieldAlert } from "lucide-react";
 
 export function ContactForm() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [formData, setFormData] = useState({ name: "", phone: "", service: "do-muc", note: "" });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const GOOGLE_SCRIPT_URL = process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL || "";
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.phone) return;
-    setFormSubmitted(true);
-    setTimeout(() => {
-      setFormSubmitted(false);
+
+    setIsSubmitting(true);
+
+    const payload = {
+      hoten: formData.name,
+      sdt: formData.phone,
+      dichvu: formData.service,
+      ghichu: formData.note
+    };
+
+    try {
+      await fetch(GOOGLE_SCRIPT_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload)
+      });
+
+      setFormSubmitted(true);
       setFormData({ name: "", phone: "", service: "do-muc", note: "" });
-    }, 5000);
+
+      setTimeout(() => {
+        setFormSubmitted(false);
+      }, 5000);
+    } catch (error) {
+      console.error("Lỗi gửi form:", error);
+      alert("Có lỗi xảy ra, vui lòng gọi trực tiếp hotline: 0988.732.433");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -65,7 +95,7 @@ export function ContactForm() {
                 id="phone"
                 required
                 type="tel"
-                placeholder="0984xxxxxx"
+                placeholder="0988xxxxxx"
                 value={formData.phone}
                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                 className="bg-slate-50/50 dark:bg-zinc-950/50 border-slate-200 dark:border-zinc-800 h-10 px-3.5"
@@ -105,9 +135,10 @@ export function ContactForm() {
 
           <Button
             type="submit"
-            className="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold h-11 text-base rounded-lg shadow-lg shadow-indigo-600/25 transition-all cursor-pointer"
+            disabled={isSubmitting}
+            className="w-full bg-indigo-600 hover:bg-indigo-500 disabled:bg-indigo-600/50 text-white font-bold h-11 text-base rounded-lg shadow-lg shadow-indigo-600/25 transition-all cursor-pointer flex items-center justify-center gap-2"
           >
-            Gửi Yêu Cầu Hỗ Trợ
+            {isSubmitting ? "Đang gửi yêu cầu..." : "Gửi Yêu Cầu Hỗ Trợ"}
           </Button>
         </form>
       )}
@@ -117,7 +148,7 @@ export function ContactForm() {
           <ShieldAlert className="w-4 h-4 text-emerald-500" />
           Mọi thông tin đều được bảo mật tuyệt đối.
         </span>
-        <span className="font-semibold">Hotline hỗ trợ trực tiếp 24/7: 0984.399.119</span>
+        <span className="font-semibold">Hotline hỗ trợ trực tiếp 24/7: 0988.732.433</span>
       </div>
     </div>
   );

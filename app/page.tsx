@@ -83,7 +83,7 @@ export default function Home() {
 
               <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
                 <a
-                  href="tel:0984399119"
+                  href="tel:0988732433"
                   className={buttonVariants({
                     variant: "default",
                     size: "lg",
@@ -91,7 +91,7 @@ export default function Home() {
                   })}
                 >
                   <Phone className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                  Gọi Ngay: 0984.399.119
+                  Gọi Ngay: 0988.732.433
                 </a>
                 <Link
                   href="/services"
@@ -108,13 +108,13 @@ export default function Home() {
               {/* Trust markers */}
               <div className="pt-6 border-t border-slate-200 dark:border-zinc-800/80 w-full grid grid-cols-3 gap-4 text-center lg:text-left">
                 <div>
-                  <h4 className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">10+ Năm</h4>
+                  <h4 className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">5+ Năm</h4>
                   <p className="text-xs text-slate-500 dark:text-zinc-500 uppercase tracking-wider font-semibold mt-1">
                     Kinh Nghiệm
                   </p>
                 </div>
                 <div>
-                  <h4 className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">12 Quận</h4>
+                  <h4 className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">Quanh Hà Nội</h4>
                   <p className="text-xs text-slate-500 dark:text-zinc-500 uppercase tracking-wider font-semibold mt-1">
                     Túc Trực Ở HN
                   </p>
@@ -130,11 +130,11 @@ export default function Home() {
 
             {/* Hero Right Visual */}
             <div className="lg:col-span-5 relative flex justify-center">
-              <div className="relative w-full max-w-[450px] aspect-square rounded-2xl overflow-hidden shadow-2xl shadow-slate-300 dark:shadow-none border border-slate-200 dark:border-zinc-800">
+              <div className="relative w-full max-w-[450px] aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl shadow-slate-300 dark:shadow-none border border-slate-200 dark:border-zinc-800">
                 <div className="absolute inset-0 bg-indigo-500/10 mix-blend-overlay pointer-events-none" />
                 <Image
-                  src="/hero_repair.png"
-                  alt="Kỹ thuật viên sửa chữa máy photocopy"
+                  src="/xuan_thanh.jpg"
+                  alt="Đội ngũ kỹ thuật viên Xuân Thành Photocopy chuyên nghiệp"
                   fill
                   priority
                   className="object-cover object-center transform hover:scale-[1.03] transition-transform duration-500"
@@ -228,8 +228,58 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ABOUT US / REAL OPERATIONS SECTION */}
+      <section className="py-20 bg-white dark:bg-zinc-900 border-y border-slate-100 dark:border-zinc-900/50 transition-colors">
+        <div className="container mx-auto px-4 md:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            {/* Action Visual of Technician */}
+            <div className="lg:col-span-5 relative flex justify-center order-2 lg:order-1">
+              <div className="relative w-full max-w-[400px] aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border border-slate-200 dark:border-zinc-800">
+                <Image
+                  src="/xuan_thanh2.jpg"
+                  alt="Kỹ thuật viên Xuân Thành đang sửa máy photocopy Ricoh tại nhà khách hàng"
+                  fill
+                  className="object-cover object-center transform hover:scale-[1.03] transition-transform duration-500"
+                />
+              </div>
+            </div>
+            {/* Text details */}
+            <div className="lg:col-span-7 flex flex-col gap-6 order-1 lg:order-2">
+              <Badge className="bg-indigo-600/10 text-indigo-700 dark:bg-indigo-500/10 dark:text-indigo-400 w-fit rounded-full px-3 py-1 font-semibold uppercase tracking-wider text-xs">
+                Kinh nghiệm chuyên môn
+              </Badge>
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white leading-tight">
+                Đội Ngũ Kỹ Thuật Viên Tay Nghề Cao & Tận Tâm
+              </h2>
+              <p className="text-slate-600 dark:text-zinc-400 leading-relaxed font-light text-base">
+                Mỗi kỹ thuật viên tại Xuân Thành đều được đào tạo chuyên sâu về phần cứng lẫn phần mềm của các dòng máy in, máy photocopy phổ biến (Ricoh, Toshiba, Canon, HP, Brother, Xerox...). Chúng tôi cam kết chẩn đoán đúng bệnh, báo đúng giá và xử lý dứt điểm sự cố ngay tại chỗ, giúp hoạt động văn phòng của khách hàng không bị gián đoạn.
+              </p>
+              
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-2">
+                <div className="flex items-start gap-2.5">
+                  <span className="w-2 h-2 rounded-full bg-indigo-600 dark:bg-indigo-400 mt-2 shrink-0" />
+                  <span className="text-slate-700 dark:text-zinc-300 text-sm font-medium">Linh kiện thay thế chính hãng 100%</span>
+                </div>
+                <div className="flex items-start gap-2.5">
+                  <span className="w-2 h-2 rounded-full bg-indigo-600 dark:bg-indigo-400 mt-2 shrink-0" />
+                  <span className="text-slate-700 dark:text-zinc-300 text-sm font-medium">Bảo trì toàn bộ máy đi kèm đổ mực</span>
+                </div>
+                <div className="flex items-start gap-2.5">
+                  <span className="w-2 h-2 rounded-full bg-indigo-600 dark:bg-indigo-400 mt-2 shrink-0" />
+                  <span className="text-slate-700 dark:text-zinc-300 text-sm font-medium">Kỹ thuật trực quận có mặt sau 15-30p</span>
+                </div>
+                <div className="flex items-start gap-2.5">
+                  <span className="w-2 h-2 rounded-full bg-indigo-600 dark:bg-indigo-400 mt-2 shrink-0" />
+                  <span className="text-slate-700 dark:text-zinc-300 text-sm font-medium">Bảo hành uy tín, dài hạn tận nhà</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* COMMITMENTS */}
-      <section className="py-20 bg-white dark:bg-zinc-900 border-y border-slate-100 dark:border-zinc-900 transition-colors">
+      <section className="py-20 bg-slate-50 dark:bg-zinc-950 border-b border-slate-100 dark:border-zinc-900 transition-colors">
         <div className="container mx-auto px-4 md:px-8">
           <div className="max-w-3xl mx-auto text-center mb-16 flex flex-col gap-4">
             <Badge className="bg-emerald-600/10 text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-400 w-fit mx-auto rounded-full px-3 py-1 font-semibold uppercase tracking-wider text-xs">
@@ -285,7 +335,7 @@ export default function Home() {
       </section>
 
       {/* CONTACT FORM */}
-      <section className="py-20 bg-slate-50 dark:bg-zinc-950 transition-colors">
+      <section className="py-20 bg-white dark:bg-zinc-900 transition-colors">
         <div className="container mx-auto px-4 md:px-8 max-w-4xl">
           <ContactForm />
         </div>

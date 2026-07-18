@@ -58,24 +58,16 @@ export function Header() {
 
         {/* Action buttons */}
         <div className="hidden sm:flex items-center gap-3">
-          <Link
-            href="/contact"
-            className={buttonVariants({
-              variant: "outline",
-              className: "font-medium group rounded-full border-indigo-600/30 hover:border-indigo-600 dark:border-indigo-500/30 dark:hover:border-indigo-400",
-            })}
-          >
-            Đăng Ký Tư Vấn
-          </Link>
+        
           <a
-            href="tel:0984399119"
+            href="tel:0988732433"
             className={buttonVariants({
               variant: "default",
               className: "bg-indigo-600 hover:bg-indigo-500 text-white shadow-lg shadow-indigo-600/20 rounded-full font-semibold relative overflow-hidden group flex items-center gap-1.5",
             })}
           >
             <Phone className="w-4 h-4 animate-bounce" />
-            Hotline: 0984.399.119
+            Hotline: 0988.732.433
           </a>
         </div>
 
@@ -121,14 +113,14 @@ export function Header() {
               Đăng Ký Tư Vấn
             </Link>
             <a
-              href="tel:0984399119"
+              href="tel:0988732433"
               className={buttonVariants({
                 variant: "default",
                 className: "bg-indigo-600 hover:bg-indigo-500 text-white rounded-full font-semibold flex items-center justify-center gap-1.5",
               })}
             >
               <Phone className="w-4 h-4" />
-              Gọi Ngay: 0984.399.119
+              Gọi Ngay: 0988.732.433
             </a>
           </div>
         </div>

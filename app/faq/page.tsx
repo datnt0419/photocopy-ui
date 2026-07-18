@@ -98,7 +98,7 @@ export default function FAQPage() {
           <h3 className="font-bold text-slate-900 dark:text-white text-lg">Bạn vẫn còn câu hỏi khác?</h3>
           <p className="text-slate-500 text-sm mt-1 mb-6">Liên hệ trực tiếp với bộ phận chăm sóc khách hàng của chúng tôi để được tư vấn thêm.</p>
           <a
-            href="tel:0984399119"
+            href="tel:0988732433"
             className={buttonVariants({
               variant: "default",
               size: "lg",
@@ -106,7 +106,7 @@ export default function FAQPage() {
             })}
           >
             <Phone className="w-4 h-4" />
-            Liên hệ: 0984.399.119
+            Liên hệ: 0988.732.433
           </a>
         </div>
       </div>

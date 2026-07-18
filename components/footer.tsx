@@ -24,15 +24,15 @@ export function Footer() {
           <div className="flex flex-col gap-2.5 text-sm">
             <div className="flex items-center gap-2">
               <span className="text-zinc-500">Đặt lịch (08:00 - 21:00):</span>
-              <a href="tel:0984399119" className="text-indigo-400 hover:underline font-bold">0984.399.119</a>
+              <a href="tel:0988732433" className="text-indigo-400 hover:underline font-bold">0988.732.433</a>
             </div>
             <div className="flex items-center gap-2">
               <span className="text-zinc-500">Bảo hành & Khiếu nại:</span>
-              <a href="tel:0984399119" className="text-indigo-400 hover:underline font-bold">0984.399.119</a>
+              <a href="tel:0988732433" className="text-indigo-400 hover:underline font-bold">0988.732.433</a>
             </div>
             <div className="flex items-center gap-2">
               <span className="text-zinc-500">Bàn làm việc cố định:</span>
-              <a href="tel:02439964519" className="text-indigo-400 hover:underline">024.3996.4519</a>
+              <a href="tel:02439964519" className="text-indigo-400 hover:underline">0988.732.433</a>
             </div>
             <p className="text-xs text-zinc-600 mt-1">Phục vụ tất cả các ngày trong tuần (kể cả Thứ 7 và Chủ Nhật).</p>
           </div>
@@ -40,14 +40,11 @@ export function Footer() {
 
         {/* Showroom locations */}
         <div className="md:col-span-4 flex flex-col gap-4">
-          <h4 className="text-white font-bold text-sm uppercase tracking-wider">Hệ Thống Trạm Trực Kỹ Thuật</h4>
+          <h4 className="text-white font-bold text-sm uppercase tracking-wider">Hệ Thống Cơ Sở Cửa Hàng</h4>
           <ul className="text-xs flex flex-col gap-2 text-zinc-500 font-light">
-            <li>• Chi nhánh Cầu Giấy: Số 26 Ngõ 165 Cầu Giấy</li>
-            <li>• Chi nhánh Đống Đa: Số 12 Chùa Bộc, Đống Đa</li>
-            <li>• Chi nhánh Thanh Xuân: Số 45 Nguyễn Trãi, Thanh Xuân</li>
-            <li>• Chi nhánh Hà Đông: Số 88 Quang Trung, Hà Đông</li>
-            <li>• Chi nhánh Ba Đình: Số 15 Liễu Giai, Ba Đình</li>
-            <li>• Trạm trực: Hai Bà Trưng, Hoàn Kiếm, Hoàng Mai, Mỹ Đình</li>
+            <li>• Cơ sở 1: 175 Trần Quốc Vượng, Cầu Giấy, Hà Nội</li>
+            <li>• Cơ sở 2: 567 Nguyễn Hoàng Tôn, Tây Hồ, Hà Nội</li>
+            <li className="pt-2 border-t border-slate-800/40 text-[10px] text-zinc-600 font-normal">• Trạm kỹ thuật trực sẵn sàng 15-30p tại tất cả các quận nội thành Hà Nội.</li>
           </ul>
         </div>
       </div>

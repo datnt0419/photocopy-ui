@@ -14,12 +14,8 @@ export const metadata: Metadata = {
 
 export default function DistrictsPage() {
   const branchLocations = [
-    { name: "Cầu Giấy", address: "Số 26 Ngõ 165 Cầu Giấy, Hà Nội", mapLink: "#" },
-    { name: "Đống Đa", address: "Số 12 Chùa Bộc, Đống Đa, Hà Nội", mapLink: "#" },
-    { name: "Thanh Xuân", address: "Số 45 Nguyễn Trãi, Thanh Xuân, Hà Nội", mapLink: "#" },
-    { name: "Hà Đông", address: "Số 88 Quang Trung, Hà Đông, Hà Nội", mapLink: "#" },
-    { name: "Ba Đình", address: "Số 15 Liễu Giai, Ba Đình, Hà Nội", mapLink: "#" },
-    { name: "Trạm Trực Mỹ Đình", address: "Số 15 Nguyễn Cơ Thạch, Mỹ Đình, Hà Nội", mapLink: "#" },
+    { name: "Cơ sở Cầu Giấy (Trụ sở chính)", address: "175 Trần Quốc Vượng, Cầu Giấy, Hà Nội", mapLink: "#" },
+    { name: "Cơ sở Tây Hồ", address: "567 Nguyễn Hoàng Tôn, Tây Hồ, Hà Nội", mapLink: "#" },
   ];
 
   return (
@@ -64,7 +60,7 @@ export default function DistrictsPage() {
                 </div>
                 <div className="flex gap-2">
                   <a
-                    href="tel:0984399119"
+                    href="tel:0988732433"
                     className={buttonVariants({
                       variant: "outline",
                       className: "w-full text-xs font-semibold py-2 rounded-lg border-indigo-600/30 hover:border-indigo-600 dark:border-indigo-500/30 dark:hover:border-indigo-400 flex items-center justify-center gap-1",

@@ -5,7 +5,7 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Liên Hệ Đặt Lịch Hẹn Đổ Mực & Sửa Máy In",
-  description: "Liên hệ Hotline 24/7 của Xuân Thành Photocopy: 0984.399.119 hoặc đăng ký tư vấn trực tuyến để nhận hỗ trợ đổ mực, sửa chữa máy photocopy tận nơi.",
+  description: "Liên hệ Hotline 24/7 của Xuân Thành Photocopy: 0988.732.433 hoặc đăng ký tư vấn trực tuyến để nhận hỗ trợ đổ mực, sửa chữa máy photocopy tận nơi.",
   alternates: {
     canonical: "/contact",
   },
@@ -46,8 +46,8 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h4 className="font-bold text-sm text-slate-900 dark:text-white">Hotline Phục Vụ 24/7</h4>
-                  <a href="tel:0984399119" className="text-indigo-600 dark:text-indigo-400 font-semibold text-base block mt-0.5 hover:underline">
-                    0984.399.119
+                  <a href="tel:0988732433" className="text-indigo-600 dark:text-indigo-400 font-semibold text-base block mt-0.5 hover:underline">
+                    0988.732.433
                   </a>
                   <a href="tel:02439964519" className="text-slate-500 text-sm block hover:underline">
                     Bàn cố định: 024.3996.4519
@@ -87,9 +87,12 @@ export default function ContactPage() {
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-sm text-slate-900 dark:text-white">Văn Phòng Điều Hành Trung Tâm</h4>
-                  <span className="text-slate-600 dark:text-zinc-400 text-sm block mt-0.5">
-                    Số 26 Ngõ 165 Cầu Giấy, Quận Cầu Giấy, Hà Nội
+                  <h4 className="font-bold text-sm text-slate-900 dark:text-white">Hệ Thống Cơ Sở Cửa Hàng</h4>
+                  <span className="text-slate-600 dark:text-zinc-400 text-sm block mt-0.5 font-medium">
+                    Cơ sở 1 (Cầu Giấy): 175 Trần Quốc Vượng, Quận Cầu Giấy, Hà Nội
+                  </span>
+                  <span className="text-slate-600 dark:text-zinc-400 text-sm block mt-1.5 font-medium">
+                    Cơ sở 2 (Tây Hồ): 567 Nguyễn Hoàng Tôn, Quận Tây Hồ, Hà Nội
                   </span>
                 </div>
               </div>

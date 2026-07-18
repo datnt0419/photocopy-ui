@@ -155,15 +155,15 @@ export default function ServicesPage() {
             <p className="text-indigo-100 text-sm mt-1">Vui lòng gọi hotline để kỹ thuật viên tư vấn và giải đáp miễn phí trong vòng 5 phút.</p>
           </div>
           <a
-            href="tel:0984399119"
+            href="tel:0988732433"
             className={buttonVariants({
               variant: "default",
               size: "lg",
-              className: "bg-white hover:bg-slate-100 text-indigo-700 font-bold px-6 py-3 rounded-full flex items-center gap-2 shrink-0 shadow-lg",
+              className: "text-indigo-700 font-bold px-6 py-3 rounded-full flex items-center gap-2 shrink-0 shadow-lg",
             })}
           >
             <Phone className="w-4 h-4" />
-            0984.399.119
+            0988.732.433
           </a>
         </div>
       </div>

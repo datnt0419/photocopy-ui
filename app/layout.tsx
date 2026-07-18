@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/hero_repair.png",
+        url: "/xuan_thanh.jpg",
         width: 800,
         height: 600,
         alt: "Kỹ thuật viên sửa chữa máy photocopy Xuân Thành",
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Xuân Thành Photocopy | Sửa Chữa & Đổ Mực Máy In Tại Hà Nội",
     description: "Xuân Thành chuyên đổ mực máy in, sửa chữa máy photocopy tại nhà Hà Nội. Phục vụ nhanh 15-30 phút, linh kiện chính hãng, bảo hành dài hạn, xuất hóa đơn VAT.",
-    images: ["/hero_repair.png"],
+    images: ["/xuan_thanh.jpg"],
   },
   robots: {
     index: true,
@@ -116,11 +116,11 @@ export default function RootLayout({
               "image": "https://xuanthanhphotocopy.com/hero_repair.png",
               "@id": "https://xuanthanhphotocopy.com/#localbusiness",
               "url": "https://xuanthanhphotocopy.com",
-              "telephone": "0984399119",
+              "telephone": "0988732433",
               "priceRange": "80.000đ - 450.000đ",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Số 26 Ngõ 165 Cầu Giấy",
+                "streetAddress": "175 Trần Quốc Vượng",
                 "addressLocality": "Cầu Giấy",
                 "addressRegion": "Hà Nội",
                 "postalCode": "100000",

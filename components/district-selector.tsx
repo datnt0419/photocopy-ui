@@ -5,21 +5,11 @@ import { Badge } from "@/components/ui/badge";
 import { MapPin, Phone, ChevronRight } from "lucide-react";
 
 export function DistrictSelector() {
-  const [selectedDistrict, setSelectedDistrict] = useState<string>("Cầu Giấy");
+  const [selectedDistrict, setSelectedDistrict] = useState<string>("Cầu Giấy - Trần Quốc Vượng");
 
   const districts = [
-    { name: "Cầu Giấy", hotline: "0984.399.119", address: "Số 26 Ngõ 165 Cầu Giấy" },
-    { name: "Đống Đa", hotline: "0984.399.119", address: "Số 12 Chùa Bộc, Đống Đa" },
-    { name: "Thanh Xuân", hotline: "0984.399.119", address: "Số 45 Nguyễn Trãi, Thanh Xuân" },
-    { name: "Hà Đông", hotline: "0984.399.119", address: "Số 88 Quang Trung, Hà Đông" },
-    { name: "Ba Đình", hotline: "0984.399.119", address: "Số 15 Liễu Giai, Ba Đình" },
-    { name: "Hoàn Kiếm", hotline: "0984.399.119", address: "Số 5 Hàng Bài, Hoàn Kiếm" },
-    { name: "Hoàng Mai", hotline: "0984.399.119", address: "Số 120 Tân Mai, Hoàng Mai" },
-    { name: "Hai Bà Trưng", hotline: "0984.399.119", address: "Số 32 Bạch Mai, Hai Bà Trưng" },
-    { name: "Tây Hồ", hotline: "0984.399.119", address: "Số 56 Lạc Long Quân, Tây Hồ" },
-    { name: "Nam Từ Liêm", hotline: "0984.399.119", address: "Số 99 Lê Đức Thọ, Mỹ Đình" },
-    { name: "Bắc Từ Liêm", hotline: "0984.399.119", address: "Số 22 Cổ Nhuế, Bắc Từ Liêm" },
-    { name: "Mỹ Đình", hotline: "0984.399.119", address: "Số 15 Nguyễn Cơ Thạch, Mỹ Đình" },
+    { name: "Cầu Giấy - Trần Quốc Vượng", hotline: "0988.732.433", address: "175 Trần Quốc Vượng, Dịch Vọng Hậu, Cầu Giấy, Hà Nội" },
+    { name: "Xuân Đỉnh - Nguyễn Hoàng Tôn", hotline: "0988.732.433", address: "567 Nguyễn Hoàng Tôn, Xuân Đỉnh, Tây Hồ, Hà Nội" },
   ];
 
   const currentDistrictInfo = districts.find((d) => d.name === selectedDistrict);
@@ -32,10 +22,10 @@ export function DistrictSelector() {
           Khu vực phục vụ nhanh
         </Badge>
         <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">
-          Kỹ Thuật Viên Túc Trực Tại 12 Quận Hà Nội
+          Hệ Thống Cơ Sở Xuân Thành
         </h2>
         <p className="text-slate-600 dark:text-zinc-400 leading-relaxed font-light">
-          Với mạng lưới showroom và trạm trực kỹ thuật trải rộng khắp các quận Hà Nội, chúng tôi cam kết có mặt trong vòng 15-30 phút sau cuộc gọi để xử lý sự cố nhanh nhất.
+          Chúng tôi sở hữu các cơ sở sửa chữa cố định và đội ngũ kỹ thuật viên trực quận liên tục ở Hà Nội, cam kết có mặt trong vòng 15-30 phút sau cuộc gọi để xử lý sự cố.
         </p>
 
         {/* Dynamic district output card */}
@@ -44,11 +34,11 @@ export function DistrictSelector() {
           <div className="flex items-start gap-3">
             <MapPin className="w-5 h-5 mt-0.5 text-indigo-200 shrink-0" />
             <div>
-              <h4 className="font-bold text-lg mb-1">Trạm Trực Quận: {selectedDistrict}</h4>
+              <h4 className="font-bold text-lg mb-1">Cơ Sở Đang Chọn</h4>
               <p className="text-xs text-indigo-100 mb-4">{currentDistrictInfo?.address}</p>
               <div className="flex items-center gap-2 bg-white/10 px-3 py-2 rounded-lg text-sm w-fit font-medium">
                 <Phone className="w-4 h-4 animate-pulse" />
-                Hotline gọi nhanh: <a href="tel:0984399119" className="underline font-bold">{currentDistrictInfo?.hotline}</a>
+                Hotline gọi nhanh: <a href="tel:0988732433" className="underline font-bold">{currentDistrictInfo?.hotline}</a>
               </div>
             </div>
           </div>
@@ -58,9 +48,9 @@ export function DistrictSelector() {
       {/* Grid selector side */}
       <div className="lg:col-span-7">
         <h4 className="text-sm font-semibold text-slate-500 dark:text-zinc-400 mb-4 uppercase tracking-wider">
-          Chọn quận của bạn để tìm chi nhánh gần nhất:
+          Chọn cơ sở gần bạn nhất để được hỗ trợ tức thì:
         </h4>
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           {districts.map((d, idx) => {
             const isActive = d.name === selectedDistrict;
             return (

@@ -122,7 +122,7 @@ export default function ProcessPage() {
             <p className="text-indigo-100 text-sm mt-1">Kỹ thuật viên túc trực của chúng tôi đã sẵn sàng phục vụ bạn trong 15-30 phút.</p>
           </div>
           <a
-            href="tel:0984399119"
+            href="tel:0988732433"
             className={buttonVariants({
               variant: "default",
               size: "lg",
@@ -130,7 +130,7 @@ export default function ProcessPage() {
             })}
           >
             <Phone className="w-4 h-4 " />
-            0984.399.119
+            0988.732.433
           </a>
         </div>
       </div>
