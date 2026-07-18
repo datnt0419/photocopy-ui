@@ -20,7 +20,7 @@ export default function FAQPage() {
     },
     {
       q: "Linh kiện thay thế có được bảo hành không?",
-      a: "Có. Tất cả linh kiện thay thế (trống in, gạt mực, lô sấy, lô ép, vỏ sấy...) do Hoàng Hà cung cấp đều được dán tem bảo hành chính hãng. Thời gian bảo hành từ 1 đến 12 tháng tùy thuộc vào chủng loại linh kiện.",
+      a: "Có. Tất cả linh kiện thay thế (trống in, gạt mực, lô sấy, lô ép, vỏ sấy...) do Xuân Thành cung cấp đều được dán tem bảo hành chính hãng. Thời gian bảo hành từ 1 đến 12 tháng tùy thuộc vào chủng loại linh kiện.",
     },
     {
       q: "Cửa hàng có xuất hóa đơn VAT đầy đủ cho công ty không?",
@@ -32,7 +32,7 @@ export default function FAQPage() {
     },
     {
       q: "Tôi có thể thuê máy photocopy văn phòng với mức giá như thế nào?",
-      a: "Hoàng Hà cung cấp các gói dịch vụ cho thuê máy photocopy Ricoh, Toshiba chất lượng cao cho văn phòng công ty với mức phí chỉ từ 800.000đ/tháng. Gói thuê đã bao gồm toàn bộ chi phí đổ mực, sửa chữa hỏng hóc và bảo dưỡng định kỳ, bạn chỉ cần mua giấy in.",
+      a: "Xuân Thành cung cấp các gói dịch vụ cho thuê máy photocopy Ricoh, Toshiba chất lượng cao cho văn phòng công ty với mức phí chỉ từ 800.000đ/tháng. Gói thuê đã bao gồm toàn bộ chi phí đổ mực, sửa chữa hỏng hóc và bảo dưỡng định kỳ, bạn chỉ cần mua giấy in.",
     },
   ];
 
@@ -47,7 +47,7 @@ export default function FAQPage() {
             Các Câu Hỏi Thường Gặp
           </h1>
           <p className="text-slate-600 dark:text-zinc-400">
-            Tổng hợp các thắc mắc của khách hàng về chi phí, quy trình hỗ trợ và chế độ bảo hành của Hoàng Hà Photocopy.
+            Tổng hợp các thắc mắc của khách hàng về chi phí, quy trình hỗ trợ và chế độ bảo hành của Xuân Thành Photocopy.
           </p>
         </div>
 

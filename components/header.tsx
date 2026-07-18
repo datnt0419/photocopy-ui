@@ -31,7 +31,7 @@ export function Header() {
       <div className="container mx-auto px-4 md:px-8 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 font-bold text-xl tracking-tight">
           <span className="bg-gradient-to-r from-indigo-600 to-blue-500 bg-clip-text text-transparent dark:from-indigo-400 dark:to-blue-400">
-            HOÀNG HÀ
+            Xuân Thành
           </span>
           <span className="text-slate-500 dark:text-zinc-400 font-light text-base">Photocopy</span>
         </Link>

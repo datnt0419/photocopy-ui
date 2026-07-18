@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Hoàng Hà Photocopy | Sửa Chữa & Đổ Mực Máy In Tại Hà Nội",
-  description: "Hoàng Hà chuyên đổ mực, sửa chữa, thay thế linh kiện chính hãng cho máy in, máy photocopy chuyên nghiệp tại nhà Hà Nội.",
+  title: "Xuân Thành Photocopy | Sửa Chữa & Đổ Mực Máy In Tại Hà Nội",
+  description: "Xuân Thành chuyên đổ mực, sửa chữa, thay thế linh kiện chính hãng cho máy in, máy photocopy chuyên nghiệp tại nhà Hà Nội.",
 };
 
 export default function RootLayout({

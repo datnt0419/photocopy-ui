@@ -36,7 +36,7 @@ export default function DistrictsPage() {
         {/* Branch Offices List */}
         <div className="bg-white dark:bg-zinc-900/30 border border-slate-200 dark:border-zinc-800/85 rounded-2xl p-6 md:p-8">
           <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-8 text-center">
-            Danh Sách Chi Nhánh Cố Định của Hoàng Hà
+            Danh Sách Chi Nhánh Cố Định của Xuân Thành
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {branchLocations.map((branch, idx) => (

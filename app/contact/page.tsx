@@ -23,7 +23,7 @@ export default function ContactPage() {
           <div className="lg:col-span-5 space-y-8">
             <div>
               <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">
-                Thông Tin Hoàng Hà Photocopy
+                Thông Tin Xuân Thành Photocopy
               </h2>
               <p className="text-slate-600 dark:text-zinc-400 font-light text-sm leading-relaxed">
                 Quý khách cần giải đáp khiếu nại, phản hồi chất lượng phục vụ hoặc báo giá dịch vụ doanh nghiệp vui lòng liên hệ:

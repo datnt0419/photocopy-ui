@@ -8,13 +8,13 @@ export function Footer() {
         {/* Brand block */}
         <div className="md:col-span-4 flex flex-col gap-4">
           <Link href="/" className="text-white font-black text-xl tracking-wider hover:text-indigo-400 transition-colors">
-            HOÀNG HÀ PHOTOCOPY
+            Xuân Thành PHOTOCOPY
           </Link>
           <p className="text-sm text-zinc-500 leading-relaxed font-light">
-            Hoàng Hà là trung tâm sửa chữa, đổ mực máy in, máy photocopy chuyên nghiệp hàng đầu tại khu vực Hà Nội. Tiết kiệm chi phí văn phòng cho doanh nghiệp của bạn.
+            Xuân Thành là trung tâm sửa chữa, đổ mực máy in, máy photocopy chuyên nghiệp hàng đầu tại khu vực Hà Nội. Tiết kiệm chi phí văn phòng cho doanh nghiệp của bạn.
           </p>
           <div className="text-xs text-zinc-600 mt-2">
-            © {new Date().getFullYear()} Hoàng Hà Photocopy. All rights reserved.
+            © {new Date().getFullYear()} Xuân Thành Photocopy. All rights reserved.
           </div>
         </div>
 

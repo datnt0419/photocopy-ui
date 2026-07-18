@@ -77,7 +77,7 @@ export default function Home() {
               </h1>
 
               <p className="max-w-xl text-lg text-slate-600 dark:text-zinc-400 leading-relaxed font-light">
-                Hoàng Hà chuyên đổ mực, sửa chữa, thay thế linh kiện chính hãng cho máy in, máy photocopy chuyên nghiệp
+                Xuân Thành chuyên đổ mực, sửa chữa, thay thế linh kiện chính hãng cho máy in, máy photocopy chuyên nghiệp
                 (Canon, HP, Brother, Ricoh, Toshiba, Xerox, Epson...). Kỹ thuật viên phản ứng nhanh sau 15 phút gọi!
               </p>
 
@@ -236,7 +236,7 @@ export default function Home() {
               Yên tâm sử dụng
             </Badge>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">
-              Cam Kết Chất Lượng Vàng Từ Hoàng Hà
+              Cam Kết Chất Lượng Vàng Từ Xuân Thành
             </h2>
           </div>
 
